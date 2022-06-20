@@ -1,0 +1,12 @@
+{{ $uniq := now.UnixNano }}
+<div id="slides-{{ $uniq }}" style="height: 200px">
+	{{ $dir := .Get "from" }}
+	{{ range (readDir $dir) }}
+	<div style="background-image: url('{{ $dir }}/{{ .Name }}')"></div>
+	{{ end }}
+</div>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(){
+	$("#slides-{{ $uniq }}").skippr({navType: 'none', keyboardOnAlways:false});
+});
+</script>

@@ -1,0 +1,37 @@
+<footer class="footer" style="position: relative; bottom: 0; width: 100%">
+	<div class="content has-text-centered pull-down">
+		<div class="columns">
+			<div class="column">
+				<i class="fas fa-phone-rotary"></i>
+				<p>Frau Zumpe (Leitung)</p>
+				03522 38 81 8
+			</div>
+			<div class="column">
+				<i class="fas fa-info"></i>
+				<p>
+				Bilder und Texte sind Eigentum des Kinderhaus Priestewitz.<br>
+
+				{{ $data := newScratch }}
+				{{ $data.Set "firstFooterSet" false}}
+				{{ range .Site.Menus.footer }}
+				{{ if ( $data.Get "firstFooterSet" ) }}
+				|
+				{{ else }}
+				{{ $data.Set "firstFooterSet" true}}
+				{{ end }}
+				<a href="{{ .URL }}" style="color: #EFA914;">{{ .Name }}</a>
+				{{ end }}
+				<br>
+				<sub>Website und Hosting zur Verfügung gestellt von Moritz Poldrack</sub>
+				</p>
+			</div>
+			<div class="column">
+				<i class="fas fa-home-heart"></i>
+				<p class="is-4">Öffnungszeiten</p>
+				Mo-Fr: 6-17 Uhr
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/skipper-slider@1.2.1/dist/skippr.min.js"></script>

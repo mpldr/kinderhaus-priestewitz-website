@@ -1,0 +1,183 @@
+.quote-container {
+	margin-top: 50px;
+	position: relative;
+}
+
+/* TODO: etwas nach rechts und links verschieben (evtl. zufällig?) oder zufaa durch determiniertes auf basis des inhaltes ersetzen */
+.note {
+	color: #333;
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+	padding: 20px;
+	font-size: 25px;
+	box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.note .author {
+	display: block;
+	margin: 20px 0 0 0;
+	text-align: right;
+}
+
+.color-1 {
+	/* Lachs */
+	background: #fcbdaa !important;
+}
+
+.color-2 {
+	/* Grün */
+	background: #59af8c !important;
+}
+
+.color-3 {
+	/* Gelb */
+	background: #e2be57 !important;
+}
+
+.color-4 {
+	/* blau */
+	background: #78b3da !important;
+}
+
+.rotate-r3 {
+	-webkit-transform: rotate(1.5deg);
+	-moz-transform: rotate(1.5deg);
+	-o-transform: rotate(1.5deg);
+	-ms-transform: rotate(1.5deg);
+	transform: rotate(1.5deg);
+}
+
+.rotate-l3 {
+	-webkit-transform: rotate(-1.5deg);
+	-moz-transform: rotate(-1.5deg);
+	-o-transform: rotate(-1.5deg);
+	-ms-transform: rotate(-1.5deg);
+	transform: rotate(-1.5deg);
+}
+
+.rotate-r4 {
+	-webkit-transform: rotate(2.5deg);
+	-moz-transform: rotate(2.5deg);
+	-o-transform: rotate(2.5deg);
+	-ms-transform: rotate(2.5deg);
+	transform: rotate(2.5deg);
+}
+
+.rotate-l4 {
+	-webkit-transform: rotate(-2.5deg);
+	-moz-transform: rotate(-2.5deg);
+	-o-transform: rotate(-2.5deg);
+	-ms-transform: rotate(-2.5deg);
+	transform: rotate(-2.5deg);
+}
+
+.rotate-r2 {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.rotate-l2 {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+.rotate-r1 {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+.rotate-l1 {
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.pin {
+	background-color: #aaa;
+	display: block;
+	height: 32px;
+	width: 4px;
+	position: absolute;
+	top: -16px;
+	z-index: 1;
+	left: 50%;
+}
+
+.pin-head {
+	top: -18px;
+	z-index: 2;
+	left: 50%;
+	position: absolute;
+	display: block;
+	background: black;
+	border-radius: 100%;
+	height: 16px;
+	width: 16px;
+	margin: 0;
+	background: radial-gradient(circle at 12px 4px, #f00, #000);
+}
+
+.pin-left {
+	left: 20%;
+}
+
+.pin-right {
+	left: 80%;
+}
+
+.pin:before {
+	background-color: hsla(0,0%,0%,0.1);
+	box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+	content: '';
+
+	height: 24px;
+	width: 2px;
+	left: 0;
+	position: absolute;
+	top: 8px;
+
+	transform: rotate(57.5deg);
+	-moz-transform: rotate(57.5deg);
+	-webkit-transform: rotate(57.5deg);
+	-o-transform: rotate(57.5deg);
+	-ms-transform: rotate(57.5deg);
+
+	transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+}
+
+.shrink-text {
+	font-size: 15px;
+}
+
+blockquote {
+	border-radius: 20px;
+}
+
+.image-overlay-container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.overlay-top-text {
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

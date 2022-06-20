@@ -1,0 +1,69 @@
+baseURL = 'kinderhaus-kunterbunt-priestewitz.de'
+languageCode = 'de-de'
+title = 'Kinderhaus Priestewitz'
+theme = "kita"
+buildfuture = true
+markup.goldmark.renderer.unsafe = true
+
+[menu]
+[[menu.main]]
+  identifier = 'home'
+  name = 'Startseite'
+  url = '/'
+  weight = -110
+[[menu.main]]
+  identifier = 'kita'
+  name = 'Kita'
+  url = '#'
+  weight = -100
+[[menu.main]]
+  identifier = 'konzeption'
+  name = 'Konzeption'
+  url = '/kita/konzeption/'
+  parent = 'kita'
+  weight = -90
+[[menu.main]]
+  identifier = 'leitbild'
+  name = 'Leitbild'
+  url = '/kita/leitbild/'
+  parent = 'kita'
+  weight = -80
+[[menu.main]]
+  identifier = 'rahmenbedingungen'
+  name = 'Rahmenbedingungen'
+  url = '/kita/rahmenbedingungen/'
+  parent = 'kita'
+  weight = -70
+[[menu.main]]
+  identifier = 'team'
+  name = 'Team'
+  url = '/kita/team/'
+  parent = 'kita'
+  weight = -60
+[[menu.main]]
+  identifier = 'gruppen'
+  name = 'Gruppen'
+  url = '/kita/gruppen/'
+  parent = 'kita'
+  weight = -50
+[[menu.main]]
+  identifier = 'geschichte'
+  name = 'Geschichte'
+  url = '/geschichte/'
+  weight = -40
+[[menu.main]]
+  identifier = 'kontakt'
+  name = 'Kontakt'
+  url = '/kontakt/'
+  weight = -30
+
+[[menu.footer]]
+  identifier = 'impressum'
+  name = 'Impressum'
+  url = '/rechtliches/impressum/'
+  weight = -20
+[[menu.footer]]
+  identifier = 'datenschutz'
+  name = 'Datenschutzerklärung'
+  url = '/rechtliches/datenschutz/'
+  weight = -10

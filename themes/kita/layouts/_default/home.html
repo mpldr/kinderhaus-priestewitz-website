@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ range .Site.Data.news }}
+Vom: {{ .Datum.Format "02.01.2006" }}
+Inhalt: {{ .Inhalt | markdownify }}
+{{ end }}
+{{ end }}

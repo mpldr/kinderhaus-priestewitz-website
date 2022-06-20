@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ .Content }}
+{{ range .Site.Data.news }}
+<div class="quote-container">
+	<blockquote class="note handwritten">
+		<i class="pin pin-left"></i>
+		<i class="pin pin-right"></i>
+		{{ .Inhalt | markdownify }}
+		<br>
+		<small>({{ time.Format "02.01.2006" .Datum }})</small>
+	</blockquote>
+</div>
+{{ end }}
+<script type="text/javascript">
+var news = document.getElementsByTagName('blockquote');
+for(var i = 0; i < news.length; i++){
+	var directionnumber = news[i].innerText.length % 2;
+
+	var direction = "r";
+	if(directionnumber) {
+		direction = "l";
+	}
+
+	var intensity = ((news[i].innerText.length + 3) % 4)+1;
+	var color = ((news[i].innerText.length + 2) % 4)+1;
+
+	console.log("d: "+ direction+", i: "+intensity);
+	news[i].classList.add("rotate-"+direction+intensity);
+	news[i].classList.add("color-"+color);
+}
+</script>
+{{ end }}

@@ -1,0 +1,93 @@
+/* neucha-regular - latin */
+.handwritten {
+	font-family: "Neucha";
+}
+
+@font-face {
+	font-family: 'Neucha';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Neucha'),
+	url('../fonts/Neucha/neucha-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/Neucha/neucha-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* marck-script-regular - latin */
+.curly {
+	font-family: "Marck Script";
+}
+
+@font-face {
+	font-family: 'Marck Script';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Marck Script/marck-script-v10-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Marck Script'), local('MarckScript-Regular'),
+	url('../fonts/Marck Script/marck-script-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/Marck Script/marck-script-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/Marck Script/marck-script-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/Marck Script/marck-script-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/Marck Script/marck-script-v10-latin-regular.svg#MarckScript') format('svg'); /* Legacy iOS */
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active, .navbar-link {
+	border-radius: 10px;
+}
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.main-container {
+	background-color: #d5d5d5;
+	border-width    : 2px;
+	border-color    : #8a2e3d;
+	border-style    : solid;
+	padding         : 8px;
+	border-radius   : 10px;
+	margin-top      : 70px;
+	padding-bottom  : 60px;
+	margin-bottom   : -60px;
+}
+
+.rounded {
+	border-radius: 20px;
+}
+
+.shadow {
+	box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.hiddenlink {
+	color: #f2be4f;
+}
+
+.hiddenlink:hover {
+	color: #f2be4f;
+}
+
+.lottatext {
+	text-align: justify;
+}
+
+.lottatext > ul, .lottatext > ol {
+	padding-left: 40px;
+}
+
+.lottatext > ul {
+	list-style: disc;
+}
+
+small {
+	font-size: 0.5em;
+}
+
+.content blockquote {
+	background-color: unset;
+	border-left: none;
+	padding: 20px;
+}
+
