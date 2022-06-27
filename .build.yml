@@ -1,0 +1,27 @@
+image: alpine/latest
+packages:
+  - git
+  - hugo
+  - make
+  - rsync
+  - sassc
+  - yarn
+secrets:
+  - 96c8e53d-850a-4e1e-a42e-dec71e1d952a # SSH Key
+  - d6add145-c70c-46a9-8881-5df8b0d788ed # known_hosts
+  - 2b484f8c-356a-4826-9350-25fd7f40bcb3 # FontAwesome access key
+shell: false
+sources:
+- https://github.com/mpldr/kinderhaus-priestewitz-website
+tasks:
+  - retrieve-assets: |
+      cd ~/kinderhaus-priestewitz-website/themes/kita
+      make fontawesome
+      make static/assets/css/bulma.css
+  - generate-html: |
+      cd ~/kinderhaus-priestewitz-website
+      hugo
+  - upload-website: |
+      cd ~/kinderhaus-priestewitz-website
+      rsync -avzc --no-o --no-g --no-times --no-perms --delete public/ moritz@kinderhaus-kunterbunt-priestewitz.de:/Container/nginx/site
+
