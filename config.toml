@@ -1,4 +1,4 @@
-baseURL = 'kinderhaus-kunterbunt-priestewitz.de'
+baseURL = 'https://kinderhaus-kunterbunt-priestewitz.de'
 languageCode = 'de-de'
 title = 'Kinderhaus Priestewitz'
 theme = "kita"
