@@ -3,6 +3,7 @@ languageCode = 'de-de'
 title = 'Kinderhaus Priestewitz'
 theme = "kita"
 buildfuture = true
+enableGitInfo = true
 markup.goldmark.renderer.unsafe = true
 
 [menu]
